@@ -7,9 +7,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('Vertical Divider'),
-      ),
+      appBar: AppBar(title: const Text('Vertical Divider')),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [
@@ -18,12 +16,16 @@ class MyHomePage extends StatelessWidget {
             subTitle: '1.6Km/Day',
             txtColor: Colors.blue,
           ),
+
+          // - - - Vertical Divider - - -
           VerticalDivider(
             color: Colors.grey,
             thickness: 2,
             indent: 300,
             endIndent: 300,
           ),
+          // - - - - - - - - - - - -
+
           DescriptionTxt(
             title: 'Move',
             subTitle: '62Kcal/Day',
